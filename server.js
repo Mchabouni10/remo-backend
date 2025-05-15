@@ -10,7 +10,8 @@ const app = express();
 app.use(cors({
   origin: [
     /^https?:\/\/localhost(:\d+)?$/, // All localhost variants
-    'https://rawdahremodeling.vercel.app' // Production only
+    'https://rawdahremodeling.vercel.app', // Existing production origin
+    'https://remo-app-working.vercel.app' // New frontend origin
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
