@@ -9,6 +9,7 @@ const app = express();
 // Optimized CORS
 app.use(cors({
   origin: [
+    'http://localhost:3000',
     /^https?:\/\/localhost(:\d+)?$/, // All localhost variants
     'https://rawdahremodeling.vercel.app', // Existing production origin
     'https://remo-app-working.vercel.app' // New frontend origin
